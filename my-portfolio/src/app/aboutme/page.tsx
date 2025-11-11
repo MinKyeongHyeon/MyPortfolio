@@ -1,4 +1,12 @@
-function About (){
-  return <h2>내 소개</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde nemo vitae rerum quam accusantium vero nam minima, nulla ex inventore? Nisi quasi nesciunt ab architecto, nemo officiis quidem impedit?</p>
+function About() {
+  return (
+    <>
+      <Image />
+      <h2>MinKyeonghyeon</h2>
+      <p>FE DEVELOPER</p>
+      <h3>ABOUT ME</h3>
+      <p>github contribution</p>
+      <p>projects</p>
+    </>
+  );
 }
