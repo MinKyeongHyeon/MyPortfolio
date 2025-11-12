@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+/* Next.js Google Fonts 변수 사용 */
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-korean {
+  font-family: var(--font-korean);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
