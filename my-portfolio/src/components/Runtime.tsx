@@ -90,7 +90,7 @@ export default function Runtime() {
       case "commits":
         return { label: "Commits", unit: "total commits" };
       case "timer":
-        return { label: "Timer", unit: "seconds" };
+        return { label: "You've been", unit: "seconds here" };
     }
   };
 
@@ -101,7 +101,7 @@ export default function Runtime() {
       <button
         type="button"
         onClick={cycleMetric}
-        className="font-mono text-2xl text-[#F66918] text-left hover:opacity-80 transition-opacity"
+        className="font-mono text-2xl text-[#F66918] text-left"
       >
         {metricInfo.label}
       </button>
