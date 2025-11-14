@@ -3,7 +3,7 @@ import profileImg from "../../public/images/profileImage.png";
 
 export default function Profile() {
   return (
-    <section className="flex gap-[9px]">
+    <section className="mt-20 flex gap-[9px]">
       <Image
         src={profileImg}
         alt="MinKyeonghyeon"

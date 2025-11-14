@@ -7,7 +7,7 @@ type MetricType = "runtime" | "commits" | "timer";
 export default function Runtime() {
   const [currentMetric, setCurrentMetric] = useState<MetricType>("runtime");
   const [hours, setHours] = useState<number | null>(null);
-  const [commits] = useState<number>(1234); // setCommits 제거
+  const [commits] = useState<number>(1843); // setCommits 제거
   const [seconds, setSeconds] = useState<number>(0);
 
   // Runtime (hours) 계산
@@ -86,7 +86,10 @@ export default function Runtime() {
   const getMetricInfo = () => {
     switch (currentMetric) {
       case "runtime":
-        return { label: "Runtime", unit: "hours / since 2025 05 21" };
+        return {
+          label: "Runtime <= Click here",
+          unit: "hours / since 2025 05 21",
+        };
       case "commits":
         return { label: "Commits", unit: "total commits" };
       case "timer":
@@ -97,7 +100,7 @@ export default function Runtime() {
   const metricInfo = getMetricInfo();
 
   return (
-    <section className="w-[341px] flex flex-col gap-[9px]">
+    <section className="mb-5 w-[341px] flex flex-col gap-[9px]">
       <button
         type="button"
         onClick={cycleMetric}
