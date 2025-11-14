@@ -19,7 +19,7 @@ export default function About() {
         </Card>
 
         {/* 포트폴리오 섹션 */}
-        <Card title="Portfolio" backgroundColor="#4259BD">
+        <Card title="Portfolio" backgroundColor="#485E2E">
           <span>아 정말 어렵다 nextjs</span>
         </Card>
 
