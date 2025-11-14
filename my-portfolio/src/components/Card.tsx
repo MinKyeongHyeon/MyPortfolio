@@ -27,7 +27,14 @@ export default function Card({
         <h3 className="font-mono text-2xl text-white">{title}</h3>
         <MoreButton onClick={handleToggle} isExpanded={isExpanded} />
       </div>
-      {isExpanded && children}
+      {/* 동적 애니메이션(더보기)를 구현하는 최신 방법이라고함 */}
+      <div
+        className={`grid transition-all duration-400 ease-in-out ${
+          isExpanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+        }`}
+      >
+        <div className="overflow-hidden">{children}</div>
+      </div>
     </div>
   );
 }
