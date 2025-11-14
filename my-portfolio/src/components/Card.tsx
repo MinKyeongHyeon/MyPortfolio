@@ -29,7 +29,7 @@ export default function Card({
       </div>
       {/* 동적 애니메이션(더보기)를 구현하는 최신 방법이라고함 */}
       <div
-        className={`grid transition-all duration-400 ease-in-out ${
+        className={`grid transition-all duration-500 ease-in-out ${
           isExpanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
         }`}
       >
