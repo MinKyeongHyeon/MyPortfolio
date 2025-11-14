@@ -1,30 +1,15 @@
+import SkillItems from "./SkillItems";
+
 export default function Skills() {
   return (
-    <ul>
-      <li>
-        <span aria-label="숙련도">9.5</span>
-        <span>HTML5</span>
-      </li>
-      <li>
-        <span aria-label="숙련도">9.5</span>
-        <span>CSS3</span>
-      </li>
-      <li>
-        <span aria-label="숙련도">9.5</span>
-        <span>JavaScript</span>
-      </li>
-      <li>
-        <span aria-label="숙련도">9.5</span>
-        <span>TypeScript</span>
-      </li>
-      <li>
-        <span aria-label="숙련도">9.5</span>
-        <span>React</span>
-      </li>
-      <li>
-        <span aria-label="숙련도">9.5</span>
-        <span>Next.js</span>
-      </li>
+    <ul className="mt-8 flex justify-between items-end">
+      <SkillItems name="HTML5" level={9} />
+      <SkillItems name="CSS3" level={8} />
+      <SkillItems name="JS" level={9} />
+      <SkillItems name="TS" level={8} />
+      <SkillItems name="React19" level={9} />
+      <SkillItems name="Next.js" level={7} />
+      <SkillItems name="Tailwind" level={9} />
     </ul>
   );
 }
