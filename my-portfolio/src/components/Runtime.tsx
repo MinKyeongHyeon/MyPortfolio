@@ -7,7 +7,7 @@ type MetricType = "runtime" | "commits" | "timer";
 export default function Runtime() {
   const [currentMetric, setCurrentMetric] = useState<MetricType>("runtime");
   const [hours, setHours] = useState<number | null>(null);
-  const [commits, setCommits] = useState<number>(0);
+  const [commits] = useState<number>(1234); // setCommits 제거
   const [seconds, setSeconds] = useState<number>(0);
 
   // Runtime (hours) 계산
@@ -34,12 +34,6 @@ export default function Runtime() {
 
     return () => clearInterval(timer);
   }, []);
-
-  // // Commits 데이터 (나중에 API로 교체)
-  // useEffect(() => {
-  //   // 임시 데이터 - 나중에 GitHub API로 교체
-  //   setCommits(1234);
-  // }, []);
 
   const getDigits = (num: number | null): Digit[] => {
     if (num === null) return [10, 10, 10, 10];
