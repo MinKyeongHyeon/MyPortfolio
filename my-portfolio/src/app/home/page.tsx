@@ -3,6 +3,8 @@ import Profile from "@/components/Profile";
 import Skills from "@/components/Skills";
 import Runtime from "@/components/Runtime";
 import Intro from "@/components/Intro";
+import PortfolioCard from "@/components/PortfolioCard";
+
 export default function About() {
   return (
     <div className=" flex justify-center">
@@ -21,7 +23,7 @@ export default function About() {
 
         {/* 포트폴리오 섹션 */}
         <Card title="Portfolio" backgroundColor="#485E2E">
-          <span className="text-white">아 정말 어렵다 nextjs</span>
+          <PortfolioCard />
         </Card>
 
         {/* 연락처 섹션 */}
