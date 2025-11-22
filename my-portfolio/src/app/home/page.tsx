@@ -4,8 +4,14 @@ import Skills from "@/components/Skills";
 import Runtime from "@/components/Runtime";
 import Intro from "@/components/Intro";
 import PortfolioCard from "@/components/PortfolioCard";
+import project1Img from "../../../public/images/tengerine.png";
 
 export default function About() {
+  const project1 = {
+    image: project1Img,
+    title: "프로젝트1",
+    href: "/portfolio",
+  };
   return (
     <div className=" flex justify-center">
       <main className="flex flex-col gap-3">
@@ -23,7 +29,7 @@ export default function About() {
 
         {/* 포트폴리오 섹션 */}
         <Card title="Portfolio" backgroundColor="#485E2E">
-          <PortfolioCard />
+          <PortfolioCard project={project1} />
         </Card>
 
         {/* 연락처 섹션 */}
