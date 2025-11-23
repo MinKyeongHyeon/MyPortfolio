@@ -11,7 +11,7 @@ interface PortfolioCardProps {
 
 export default function PortfolioCard({ project }: PortfolioCardProps) {
   return (
-    <div className="mt-5 flex flex-col gap-4">
+    <li>
       <div className="relative w-full h-[95px] rounded-2xl bg-white">
         <Link href={project.href}>
           <Image
@@ -22,6 +22,6 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
           />
         </Link>
       </div>
-    </div>
+    </li>
   );
 }
