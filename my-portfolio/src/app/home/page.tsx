@@ -7,11 +7,23 @@ import PortfolioCard from "@/components/PortfolioCard";
 import project1Img from "../../../public/images/tengerine.png";
 
 export default function About() {
-  const project1 = {
-    image: project1Img,
-    title: "프로젝트1",
-    href: "/portfolio",
-  };
+  const project = [
+    {
+      image: project1Img,
+      title: "프로젝트1",
+      href: "/portfolio",
+    },
+    {
+      image: project1Img,
+      title: "프로젝트2",
+      href: "/portfolio",
+    },
+    {
+      image: project1Img,
+      title: "프로젝트3",
+      href: "/portfolio",
+    },
+  ];
   return (
     <div className=" flex justify-center">
       <main className="flex flex-col gap-3">
@@ -29,7 +41,11 @@ export default function About() {
 
         {/* 포트폴리오 섹션 */}
         <Card title="Portfolio" backgroundColor="#485E2E">
-          <PortfolioCard project={project1} />
+          <ul className="flex flex-col gap-4 my-5">
+            {project.map((project, index) => (
+              <PortfolioCard key={index} project={project} />
+            ))}
+          </ul>
         </Card>
 
         {/* 연락처 섹션 */}
